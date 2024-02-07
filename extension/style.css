@@ -1,6 +1,6 @@
 #question {
-    min-width: 400px; /* Minimum width */
-    min-height: 100px; /* Minimum height */
+    min-width: 1000px; /* Minimum width */
+    min-height: 1000px; /* Minimum height */
     resize: both; /* Allows the user to resize both horizontally and vertically */
     overflow: auto; /* Adds scrollbar if text exceeds the text area */
   }
