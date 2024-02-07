@@ -1,6 +1,29 @@
 #question {
-    min-width: 1000px; /* Minimum width */
-    min-height: 1000px; /* Minimum height */
-    resize: both; /* Allows the user to resize both horizontally and vertically */
-    overflow: auto; /* Adds scrollbar if text exceeds the text area */
+    min-width: 400px; 
+    min-height: 90px; 
+    resize: both; 
+    overflow: auto; 
+  }
+
+#askButton {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  #response{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+  }
+
+  body{
+    margin: 0px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 15px;
   }
