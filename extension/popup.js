@@ -1,20 +1,33 @@
-document.getElementById('askButton').addEventListener('click', function() {
-    var userQuestion = document.getElementById('question').value; // Match the ID from your HTML
-    if (userQuestion.trim() === '') {
-        alert('Please type a question.');
-        return;
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    var askButton = document.getElementById('askButton');
+    var questionInput = document.getElementById('question');
 
-    fetch(chrome.runtime.getURL('config.json'))
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error('Could not find API key');
+    questionInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            askButton.click();
+        }
+    });
+
+    document.getElementById('setApiKeyButton').addEventListener('click', function() {
+        chrome.windows.create({url: 'setup.html', type: 'popup', width: 500, height: 600});
+    });
+
+    document.getElementById('askButton').addEventListener('click', function() {
+        var userQuestion = document.getElementById('question').value;
+        if (userQuestion.trim() === '') {
+            alert('Please type a question.');
+            return;
+        }
+
+        chrome.storage.local.get(['apiKey'], function(result) {
+            const apiKey = result.apiKey;
+            if (!apiKey) {
+                alert('API key not found. Please set it up.');
+                return;
             }
-            return response.json();
-        })
-        .then((config) => {
-            const apiKey = config.apiKey;
 
+            // API key stuff
             fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
@@ -48,9 +61,6 @@ document.getElementById('askButton').addEventListener('click', function() {
                     console.error('Error:', error);
                     document.getElementById('response').textContent = 'Failed to fetch response from API.';
                 });
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-            document.getElementById('response').textContent = 'Failed to fetch API key.';
         });
+    });
 });
