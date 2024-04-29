@@ -1,7 +1,7 @@
 
 
 
-<h3 align="center">project_title</h3>
+<h3 align="center">GPT Go</h3>
 
   <p align="center">
     An economic way to use GPT-4 in the browser
@@ -24,25 +24,17 @@ To get the extension up and running follow these simple steps.
 ### Installation
 
 1. Get an API Key at [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
+2. Clone the repo or download the project as a zip
+3. In Chrome, go to chrome://extensions/ and enable Developer Mode in the top right of the page
+4. Click Load unpacked at the top left of the page
+5. Select the folder containing the repo and click OK
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After uploading 
+After loading the extension, I strongly recommend you pin it to the search bar by opening the extension menu and clicking the pin icon. Now you should be able to easily open it from any page.
+To use GPT in your Chrome browser, simply click the icon, enter your API key, and then type a question like you would using OpenAI's page.
 
 
 
@@ -59,13 +51,3 @@ Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
-
-
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
