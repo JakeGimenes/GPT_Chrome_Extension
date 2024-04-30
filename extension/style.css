@@ -1,6 +1,5 @@
 
 body, html {
-  /* height: 100%; */
   height: auto;
   margin: 0;
   padding: 0px;
@@ -8,7 +7,7 @@ body, html {
   background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
 }
 
-#image {
+#image { /* this changes the dimensions of the logo */
   display: block;
 
   width: 50%;
@@ -24,13 +23,13 @@ body, html {
   text-align: center;
 }
 
-.title {
+.title { /* changes the color and margin of the title */
   color: #333;
   margin-bottom: 30px;
 }
 
 
-#question {
+#question { /* changes the color and location of the question box */
   width: 100%;
   height: 80px;
   min-width: 225px;
@@ -43,7 +42,7 @@ body, html {
 }
 
 
-#askButton {
+#askButton { /* changes the dimensions of the ask button */
   display: block;
   width: 50%;
   padding: 10px 20px;
@@ -57,12 +56,12 @@ body, html {
   transition: background-color 0.3s ease;
 }
 
-#askButton:hover {
+#askButton:hover { /* when a user hovers over the ask button, this changes its color*/
   background-color: #005f73;
 }
 
 
-.response {
+.response { /* changes the location and dimensions of the response box */
   border: none;
   border-radius: 5px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -72,7 +71,7 @@ body, html {
   background-color: #f9f9f9;
 }
 
-button:hover {
+button:hover { 
   opacity: 0.8;
 }
  
