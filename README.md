@@ -15,6 +15,12 @@
 Chat GPT-4 currently only allows 40 queries every 3 hours, an abysmal amount for the steep price of $20 a month. You can get around this by simply using the API, but then you'd have to type questions into an IDE...
 Luckily we've built a Chrome extension that enables users to use a GUI interface for access GPT-4 via API calls, designed to bypass token limits and reduce subscription costs. 
 
+<!-- Requirements Document -->
+## Requirements
+1. When a user asks GPT a question, it must respond with an answer.
+2. When a user tries to set the api key, a window must open for the user to input the key.
+3. If the key is incorrect, the window must indicate so and allow the user to correct the mistake.
+
 
 <!-- GETTING STARTED -->
 ## Getting Started

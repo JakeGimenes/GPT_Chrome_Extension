@@ -1,4 +1,4 @@
-body, html {
+body, html { /*This is the main body of the setup window for the API key setup */
     height: auto;
     margin: 0;
     padding: 0;
@@ -9,14 +9,14 @@ body, html {
 .container {
     max-width: 340px;
     max-height: 300px;
-    margin: 50px;  /* Center the container */
+    margin: 50px; 
     background: white;
-    padding: 20px;  /* Adjust padding based on your preference */
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-h1{
+h1{ /* Makes sure the text is center aligned */
     text-align: center;
 }
 
@@ -25,7 +25,7 @@ h1{
     margin-bottom: 30px;
 }
 
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="submit"] { /* This changes the input box for the setup window */
     width: 100%;
     padding: 10px;
     margin-top: 10px;  /* Space between inputs */
@@ -34,7 +34,7 @@ input[type="text"], input[type="submit"] {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type="submit"] { /* This changes the submit button for the setup window */
     background-color: #008CBA;
     color: white;
     font-size: 14px;
