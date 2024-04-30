@@ -8,12 +8,17 @@ body, html {
   background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
 }
 
+#image {
+  display: block;
+
+  width: 50%;
+}
 
 .container {
   max-width: 340px;
   margin: 50px;
   background: white;
-  padding: 70px;
+  padding: 40px;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
