@@ -52,6 +52,10 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
 Thanks again!
 
+<!-- Reflective Summary -->
+## Summary
+This has been a wonderful growing experience. Learning how to make a Chrome extension has stretched us to learn more about API usage and machine learning. Documentation about how Chrome extensions work and setup would have been useful at the beginning of the project. Moving on, we revamp the UI, allow users to upload images, and increase AI response flexibility. 
+
 <!-- LICENSE -->
 ## License
 
