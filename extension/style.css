@@ -45,8 +45,22 @@ body, html {
 #askButton { /* changes the dimensions of the ask button */
   display: block;
   width: 50%;
-  padding: 10px 20px;
-  margin: 20px auto;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #008CBA;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#setApiKeyButton{
+  display: block;
+  width: 50%;
+  padding: 5px 10px;
+  margin: 10px auto;
   border: none;
   border-radius: 5px;
   background-color: #008CBA;
